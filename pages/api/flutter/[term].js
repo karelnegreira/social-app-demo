@@ -16,7 +16,7 @@ export default withApiAuthRequired(async function handler(req, res) {
     collection: "flutters",
   };
   const baseUrl = `${process.env.MONGODB_DATA_API_URL}/action`;
-
+  //the search functionality
   try {
     switch (req.method) {
       case "GET":
